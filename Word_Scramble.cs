@@ -22,7 +22,7 @@ namespace word_scrabble
             else
             {
                 Console.WriteLine("Unequal string!");
-
+//                word1.Length > word2.Length ? word1.Length : word2.Length;
             }
 
         }
