@@ -14,8 +14,7 @@ namespace word_scrabble
             {
                 for (int i = 0; i < word1.Length; i++)
                 {
-                    Console.Write(Char.ConvertFromUtf32(word1[i]));
-                    Console.Write(Char.ConvertFromUtf32(word2[i]));
+                    Console.Write(Char.ConvertFromUtf32(word1[i]) + Char.ConvertFromUtf32(word2[i]));
                 }
             }
             else
