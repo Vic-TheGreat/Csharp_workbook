@@ -1,4 +1,11 @@
-/* By: VicTheGreat  */
+/* By: VicTheGreat  
+simple app that generates a password from 2 words, A & B.
+SPECIFICATIONS:
+1) Password is generated from combining the characters in each word from the same position.
+ex: if A = Mom & B = Dad, i.e password = MDoamd
+2) If words are not of the same length, then the extra length is added after the equal lengths are combined as (1) above
+ex: if A = Mummy & B = Dad, password = MDuamdmy
+*/
 using System;
 using System.Collections.Generic;
 using System.Linq;
