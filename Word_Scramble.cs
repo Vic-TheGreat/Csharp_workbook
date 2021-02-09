@@ -1,11 +1,12 @@
-/* By: VicTheGreat  
+/* By: VicTheGreat
 simple app that generates a password from 2 words, A & B.
 SPECIFICATIONS:
 1) Password is generated from combining the characters in each word from the same position.
 ex: if A = Mom & B = Dad, i.e password = MDoamd
 2) If words are not of the same length, then the extra length is added after the equal lengths are combined as (1) above
 ex: if A = Mummy & B = Dad, password = MDuamdmy
-*/
+ */
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,17 +18,22 @@ namespace word_scrabble
     {
         static void Main(string[] args)
         {
-            string word1 = "Mum";
-            string word2 = "dAd12";
+            Console.Write("Please enter word 1: ");
+            string word1 = Console.ReadLine(); 
+            Console.Write("Please enter word 2: ");
+            string word2 = Console.ReadLine();
+            Console.WriteLine();
 
             if (word1.Length == word2.Length)
             {
+                Console.Write("Password is : ");
                 for (int i = 0; i < word1.Length; i++)
                 {
                     Console.Write(Char.ConvertFromUtf32(word1[i]) + Char.ConvertFromUtf32(word2[i]));
                    //Console.Write(Char.ToUpper(word1[i]) + Char.ToLower(word2[i]));
                    //why does concatenating that gives int but string when not concat~ed
                 }
+                Console.WriteLine();
             }
             else if (word1.Length > word2.Length)
             {
