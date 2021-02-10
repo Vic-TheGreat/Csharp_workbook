@@ -1,7 +1,7 @@
 # Csharp_workbook
 A playground for C# codes & notes
 - [ ] arithmetic operations ( +, - * , /, etc) on `Char` or when accessing char xters in a `string` will return the ASCII value (i.e numbers) of each char respectively.
-
+```txt
 Ex: string word1= "mum"; string word2 = "dad";
     for (int i = 0; i < word1.Length; i++)
       {
