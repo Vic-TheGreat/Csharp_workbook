@@ -29,9 +29,9 @@ namespace word_scrabble
                 Console.Write("Password is : ");
                 for (int i = 0; i < word1.Length; i++)
                 {
-                    Console.Write(Char.ConvertFromUtf32(word1[i]) + Char.ConvertFromUtf32(word2[i]));
-                   //Console.Write(Char.ToUpper(word1[i]) + Char.ToLower(word2[i]));
-                   //why does concatenating that gives int but string when not concat~ed
+                    //Console.Write(Char.ConvertFromUtf32(word1[i]) + Char.ConvertFromUtf32(word2[i]));
+                    Console.Write(word1[i]);
+                    Console.Write(word2[i]);
                 }
                 Console.WriteLine();
             }
